@@ -12,19 +12,19 @@ services:
       replicas: 1
 
   app1:
-    image: app1:0.0.2
+    image: app1:0.0.1
     expose:
       - 9090
     environment:
       - name=app1
     deploy:
-      replicas: 5
+      replicas: 3
 
   app2:
-    image: app2:0.0.2
+    image: app2:0.0.1
     expose:
       - 9090
     environment:
       - name=app2
     deploy:
-      replicas: 5
+      replicas: 3
